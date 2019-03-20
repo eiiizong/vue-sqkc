@@ -1,0 +1,108 @@
+/*! component/base.less  */
+
+html {
+	width: 100%;
+	height: 100%;
+	font-size: 100%; /*默认继承浏览器字体大小*/
+	font-family: @font-family;
+	overflow-x: hidden;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility; /* 让字体在设备上渲染出最佳效果 */
+}
+
+body {
+	width: 100%;
+	background-color: @body-bgc;
+	-webkit-tap-highlight-color: rgba(
+		0,
+		0,
+		0,
+		0
+	); /* 针对iOS ，点击一个可点击元素的时候，它就会出现一个半透明的灰色背景  设置为0则清除*/
+	-webkit-overflow-scrolling: touch; /* ios 滚动卡顿*/
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	/* Firefox */
+	-webkit-box-sizing: border-box; /* Safari */
+	box-sizing: border-box;
+}
+// 针对 vue 数据闪烁
+[v-cloak] {
+	display: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: @a-color;
+}
+
+/* 去除 ios 点击之后的背景 */
+a,
+input,
+label {
+	-webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+body,
+ul {
+	margin: 0;
+	padding: 0;
+}
+// icon
+i {
+	display: inline-block;
+	font-style: normal;
+}
+i.icon {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	vertical-align: top;
+}
+/********************************************************/
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+	vertical-align: top;
+}
+// 空 img 边框问题
+img[src=''],
+img:not([src]) {
+	.opacity(0);
+}
+/*  根据页面结构 设定不同的height   */
+// body 下面有一点 #app
+body {
+	height: 100%;
+}
+body > #app {
+	width: 100%;
+	height: 100%;
+}
+
+// 确保 #app 下只有一个 div
+body > #app > div {
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	font-weight: 500;
+}

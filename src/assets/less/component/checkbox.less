@@ -1,0 +1,43 @@
+@checkbox-size: 50px;
+@checkbox-warrper-bgc: #f0f;
+@checkbox-inner-bgc: #fff;
+@line-width: 2px;
+
+.checkbox {
+	display: block;
+	width: @checkbox-size;
+	height: @checkbox-size;
+	border-radius: 50%;
+	background-color: @checkbox-warrper-bgc;
+	position: relative;
+}
+.checkbox .icon {
+	content: '';
+	position: absolute;
+	width: 26%;
+	height: 50%;
+	left: 50%;
+	top: 50%;
+	transform: rotate(45deg);
+	margin: -30% 0 0 -13%;
+}
+.checkbox .icon:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: @line-width;
+	bottom: 0;
+	left: 0;
+	background-color: @checkbox-inner-bgc;
+	border-radius: 50px;
+}
+.checkbox .icon:after {
+	content: '';
+	position: absolute;
+	width: @line-width;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background-color:@checkbox-inner-bgc;
+	border-radius: 50px;
+}

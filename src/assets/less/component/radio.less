@@ -1,0 +1,29 @@
+@radio-warpper-size: 40px;
+@radio-inner-size: 70%;
+@radio-inner-offset: @radio-inner-size / 2;
+
+@radio-warpper-border-color: #eee;
+@radio-warpper-bgc: #f0f;
+@radio-inner-bgc: #fff;
+.radio {
+	display: block;
+	width: @radio-warpper-size;
+	height: @radio-warpper-size;
+	border-radius: 50%;
+	background-color: @radio-warpper-bgc;
+	position: relative;
+	transition: all 0.3s ease;
+	border: 1px solid @radio-warpper-border-color;
+	&:after {
+		content: '';
+		position: absolute;
+		width: @radio-inner-size;
+		height: @radio-inner-size;
+		top: 50%;
+		left: 50%;
+		margin: -@radio-inner-offset 0 0 -@radio-inner-offset;
+		border-radius: 50%;
+		background-color: @radio-inner-bgc;
+		transition: all 0.3s ease;
+	}
+}
