@@ -16,7 +16,7 @@
         <i class="icon icon-see-password" :class="isPassword ? '' : 'active'" @click="seePassword"></i>
       </div>
       <div class="btn-warpper">
-        <button type="button" class="btn">登录</button>
+        <button type="button" class="btn" @click="login">登录</button>
       </div>
       <div class="link clearfix">
         <router-link to="/forgetPassword" class="left">
@@ -42,6 +42,10 @@ export default {
     seePassword() {
       this.isPassword = !this.isPassword;
       console.log(this);
+    },
+    // 登录按钮
+    login() {
+      this.$router.push({path: '/home'});
     }
   }
 };

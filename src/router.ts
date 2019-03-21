@@ -6,6 +6,7 @@ import SignIn from "./views/sign-in.vue";
 import ForgetPassword from "./views/forget-password.vue";
 import Index from "./views/index.vue";
 import Task from "./views/task.vue";
+import My from "./views/my.vue";
 
 Vue.use(Router);
 
@@ -16,6 +17,14 @@ const routes = [
     childrens: [],
     meta: {
       title: "首页"
+    }
+  },
+  {
+    path: "/my",
+    component: My,
+    childrens: [],
+    meta: {
+      title: "个人中心"
     }
   },
   {

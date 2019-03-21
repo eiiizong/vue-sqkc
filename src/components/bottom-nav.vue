@@ -1,22 +1,10 @@
 <template>
   <div class="bottom">
-    <ul class="nav clearfix">
-      <li class="active">
-        <router-link to="/">
-          <i class="icon icon-bottom-nav-one"></i>
-          <span>首页</span>
-        </router-link>
-      </li>
-      <li>
-        <router-link to="/task">
-          <i class="icon icon-bottom-nav-two"></i>
-          <span>社群任务</span>
-        </router-link>
-      </li>
-      <li>
-        <router-link to="/my">
-          <i class="icon icon-bottom-nav-three"></i>
-          <span>个人中心</span>
+    <ul class="nav clearfix" v-if="nav">
+      <li :class="navIndex == item.index ? 'active' : ''" v-for="item in nav" :key="item.index">
+        <router-link :to="item.path">
+          <i class="icon" :class="item.className"></i>
+          <span>{{ item.name }}</span>
         </router-link>
       </li>
     </ul>
@@ -24,11 +12,35 @@
 </template>
 
 <script>
+const prev = 'icon-bottom-nav-';
 export default {
   name: "bottomNav",
-  props: {},
+  props: {
+    navIndex: Number
+  },
   data() {
-    return {};
+    return {
+      nav: [
+        {
+          index: 0,
+          path: '/home',
+          name: '首页',
+          className: prev + 'one',
+        },
+        {
+          index: 1,
+          path: '/task',
+          name: '社群任务',
+          className: prev + 'two',
+        },
+        {
+          index: 2,
+          path: '/my',
+          name: '个人中心',
+          className: prev + 'three',
+        }
+      ]
+    };
   }
 };
 </script>

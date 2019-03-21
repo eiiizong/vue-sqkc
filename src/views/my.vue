@@ -1,8 +1,8 @@
 <template>
-  <div class="task">
-    <TopNav title="社群任务"></TopNav>
+  <div class="my">
+    <TopNav title="个人中心"></TopNav>
     
-    <BottomNav :navIndex="1"></BottomNav>
+    <BottomNav :navIndex="2"></BottomNav>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ import TopNav from "../components/top-nav.vue";
 import BottomNav from "../components/bottom-nav.vue";
 
 export default {
-  name: "task",
+  name: "my",
   data() {
     return {
       isPassword: true,
@@ -48,7 +48,7 @@ export default {
 <style lang="less">
 @import url(../assets/less/variable.less);
 
-.task {
+.index {
   background-color: #f8f8f8;
   padding-bottom: @90px;
 

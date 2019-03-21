@@ -83,7 +83,7 @@
         </ul>
       </div>
     </div>
-    <BottomNav></BottomNav>
+    <BottomNav :navIndex="0"></BottomNav>
   </div>
 </template>
 
