@@ -5,20 +5,29 @@ import LoginIn from "./views/login-in.vue";
 import SignIn from "./views/sign-in.vue";
 import ForgetPassword from "./views/forget-password.vue";
 import Index from "./views/index.vue";
+import Task from "./views/task.vue";
 
 Vue.use(Router);
 
 const routes = [
   {
-    path: "/",
+    path: "/home",
     component: Index,
-    childrens: {},
+    childrens: [],
     meta: {
       title: "首页"
     }
   },
   {
-    path: "/login",
+    path: "/task",
+    name: "task",
+    component: Task,
+    meta: {
+      title: "社群任务"
+    }
+  },
+  {
+    path: "/",
     name: "login",
     component: LoginIn,
     meta: {

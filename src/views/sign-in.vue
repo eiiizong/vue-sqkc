@@ -20,29 +20,18 @@
           </button>
         </div>
       </div>
-
       <div class="input-warpper">
         <label for="password">
           <i class="icon icon-password"></i>
         </label>
-        <input
-          class="input"
-          :type="isPassword ? 'password' : 'text'"
-          id="password"
-          placeholder="请输入密码"
-        />
-        <i class="icon icon-see-password" :class="isPassword? '' : 'active'" @click="seePassword"></i>
+        <input class="input" :type="isPassword ? 'password' : 'text'" id="password" placeholder="请输入密码" />
+        <i class="icon icon-see-password" :class="isPassword ? '' : 'active'" @click="seePassword"></i>
       </div>
       <div class="input-warpper">
         <label for="passwordAgain">
           <i class="icon icon-password"></i>
         </label>
-        <input
-          class="input"
-          :type="isPassword ? 'password' : 'text'"
-          id="passwordAgain"
-          placeholder="请再次输入密码"
-        />
+        <input class="input" :type="isPassword ? 'password' : 'text'" id="passwordAgain" placeholder="请再次输入密码" />
       </div>
       <div class="input-warpper">
         <label for="inviteCode">
@@ -54,7 +43,7 @@
         <button type="button" class="btn">注册</button>
       </div>
       <div class="link clearfix">
-        <router-link to="/login" class="right">
+        <router-link to="/" class="right">
           <span>已有账号，去登录</span>
         </router-link>
       </div>

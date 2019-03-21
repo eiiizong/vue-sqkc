@@ -12,13 +12,8 @@
         <label for="password">
           <i class="icon icon-password"></i>
         </label>
-        <input
-          class="input"
-          :type="isPassword? 'password': 'text'"
-          id="password"
-          placeholder="请输入登录密码"
-        />
-        <i class="icon icon-see-password" :class="isPassword? '': 'active'" @click="seePassword"></i>
+        <input class="input" id="password" :type="isPassword ? 'password' : 'text'" placeholder="请输入登录密码" />
+        <i class="icon icon-see-password" :class="isPassword ? '' : 'active'" @click="seePassword"></i>
       </div>
       <div class="btn-warpper">
         <button type="button" class="btn">登录</button>
@@ -37,7 +32,7 @@
 
 <script>
 export default {
-  name: "login-in",
+  name: "login",
   data() {
     return {
       isPassword: true
@@ -52,7 +47,6 @@ export default {
 };
 </script>
 
-
 <style lang="less">
 @import url(../assets/less/variable.less);
 
@@ -60,11 +54,11 @@ export default {
   background: url(../assets/img/sign-bg.jpg) no-repeat top left;
   background-size: cover;
   color: #fff;
-  padding: 0 @50px;
+  padding: @200px @50px;
   h1 {
     font-size: @44px;
     line-height: 1;
-    padding: @220px 0 @58px @16px;
+    padding: @20px 0 @58px @16px;
   }
   .form {
     display: block;

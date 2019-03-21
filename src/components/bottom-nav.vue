@@ -48,6 +48,7 @@ export default {
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 2001;
     border-top: 1px solid #f4f4f4;
     li {
       width: 33.3333%;

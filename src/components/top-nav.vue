@@ -38,6 +38,9 @@ export default {
     color: #fff;
     letter-spacing: 2px;
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2001;
     .left {
       position: absolute;
       top: 50%;
