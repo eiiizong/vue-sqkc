@@ -6,7 +6,7 @@
         <label for="tel">
           <i class="icon icon-tel"></i>
         </label>
-        <input class="input" type="number" id="tel" placeholder="请输入手机号">
+        <input class="input" type="number" id="tel" placeholder="请输入手机号" />
       </div>
       <div class="input-warpper">
         <label for="password">
@@ -17,7 +17,7 @@
           :type="isPassword? 'password': 'text'"
           id="password"
           placeholder="请输入登录密码"
-        >
+        />
         <i class="icon icon-see-password" :class="isPassword? '': 'active'" @click="seePassword"></i>
       </div>
       <div class="btn-warpper">
@@ -115,4 +115,3 @@ export default {
   }
 }
 </style>
-

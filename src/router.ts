@@ -4,15 +4,17 @@ import Router from "vue-router";
 import LoginIn from "./views/login-in.vue";
 import SignIn from "./views/sign-in.vue";
 import ForgetPassword from "./views/forget-password.vue";
+import Index from "./views/index.vue";
 
 Vue.use(Router);
 
 const routes = [
   {
     path: "/",
-    component: LoginIn,
+    component: Index,
+    childrens: {},
     meta: {
-      title: '首页'
+      title: "首页"
     }
   },
   {
@@ -20,7 +22,7 @@ const routes = [
     name: "login",
     component: LoginIn,
     meta: {
-      title: '登录'
+      title: "登录"
     }
   },
   {
@@ -28,7 +30,7 @@ const routes = [
     name: "sign",
     component: SignIn,
     meta: {
-      title: '注册'
+      title: "注册"
     }
   },
   {
@@ -36,9 +38,9 @@ const routes = [
     name: "forgetPassword",
     component: ForgetPassword,
     meta: {
-      title: '重置密码'
+      title: "重置密码"
     }
-  },
+  }
 ];
 
 export default new Router({

@@ -6,17 +6,17 @@
         <label for="tel">
           <i class="icon icon-tel"></i>
         </label>
-        <input class="input" type="number" id="tel" placeholder="请输入手机号">
+        <input class="input" type="number" id="tel" placeholder="请输入手机号" />
       </div>
       <div class="input-warpper get-code">
         <label for="verificationCode">
           <i class="icon icon-verification-code"></i>
         </label>
-        <input class="input" type="number" id="verificationCode" placeholder="请输入验证码">
+        <input class="input" type="number" id="verificationCode" placeholder="请输入验证码" />
         <div class="btn-warpper send-code">
           <button type="button" class="btn" :disabled="isSendCode" @click="sendCode">
             <span v-if="!isSendCode">发送验证码</span>
-            <span v-else>已发送({{timeNumber}}s)</span>
+            <span v-else>已发送({{ timeNumber }}s)</span>
           </button>
         </div>
       </div>
@@ -42,9 +42,8 @@
           :type="isPassword? 'password': 'text'"
           id="passwordAgain"
           placeholder="请再次输入密码"
-        >
+        />
       </div>
-
       <div class="btn-warpper">
         <button type="button" class="btn">确定</button>
       </div>
@@ -87,5 +86,3 @@ export default {
   }
 };
 </script>
-
-
