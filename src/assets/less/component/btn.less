@@ -30,4 +30,24 @@ button,
 }
 .btn-warpper {
 	padding: @40px 0 @20px;
+	&.send-code {
+		padding: 0;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		.btn {
+			width: @200px;
+			height: @64px;
+			line-height: @60px;
+			background-color: #fff;
+			color: #356aff;
+			border: 1px solid #356aff;
+			font-size: @28px;
+			&[disabled] {
+				background-color: #eee;
+				border-color: #aaa;
+				color: #bbb;
+			}
+		}
+	}
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="login-in">
+  <div class="login-sign">
     <h1>登录</h1>
     <form action class="form">
       <div class="input-warpper">
@@ -53,10 +53,10 @@ export default {
 </script>
 
 
-<style lang="less" scoped>
+<style lang="less">
 @import url(../assets/less/variable.less);
 
-.login-in {
+.login-sign {
   background: url(../assets/img/sign-bg.jpg) no-repeat top left;
   background-size: cover;
   color: #fff;
