@@ -1,6 +1,6 @@
 <template>
   <div class="login-sign">
-    <h1>注册</h1>
+    <h1>重置密码</h1>
     <form action class="form">
       <div class="input-warpper">
         <label for="tel">
@@ -44,14 +44,9 @@
           placeholder="请再次输入密码"
         >
       </div>
-      <div class="input-warpper">
-        <label for="inviteCode">
-          <i class="icon icon-invite-code"></i>
-        </label>
-        <input class="input" type="text" id="inviteCode" placeholder="请输入邀请码">
-      </div>
+
       <div class="btn-warpper">
-        <button type="button" class="btn">注册</button>
+        <button type="button" class="btn">确定</button>
       </div>
       <div class="link clearfix">
         <router-link to="/login" class="right">
@@ -93,23 +88,4 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import url(../assets/less/variable.less);
-
-.login-sign {
-  .get-code {
-    padding-right: @220px;
-  }
-  .icon-verification-code {
-    width: @40px;
-    height: @40px;
-    .image("code");
-  }
-  .icon-invite-code {
-    width: @40px;
-    height: @40px;
-    .image("invitation-code");
-  }
-}
-</style>
 

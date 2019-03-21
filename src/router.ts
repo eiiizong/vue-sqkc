@@ -3,23 +3,41 @@ import Router from "vue-router";
 // import Home from "./views/Home.vue";
 import LoginIn from "./views/login-in.vue";
 import SignIn from "./views/sign-in.vue";
+import ForgetPassword from "./views/forget-password.vue";
 
 Vue.use(Router);
 
 const routes = [
   {
     path: "/",
-    component: LoginIn
+    component: LoginIn,
+    meta: {
+      title: '首页'
+    }
   },
   {
     path: "/login",
-    name: "login-in",
-    component: LoginIn
+    name: "login",
+    component: LoginIn,
+    meta: {
+      title: '登录'
+    }
   },
   {
     path: "/sign",
-    name: "login-in",
-    component: SignIn
+    name: "sign",
+    component: SignIn,
+    meta: {
+      title: '注册'
+    }
+  },
+  {
+    path: "/forgetPassword",
+    name: "forgetPassword",
+    component: ForgetPassword,
+    meta: {
+      title: '重置密码'
+    }
   },
 ];
 
