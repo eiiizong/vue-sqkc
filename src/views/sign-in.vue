@@ -7,9 +7,8 @@
 <script>
 export default {
   name: "sign-in"
-}
+};
 </script>
-
 
 <style lang="less" scoped>
 @import url(../assets/less/variable.less);

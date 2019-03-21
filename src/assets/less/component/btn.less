@@ -16,7 +16,7 @@ button,
 	vertical-align: top;
 	text-align: center;
 	background-color: @btn-bgc;
-	border-radius: @btn-border-raduis;
+	border-radius: 100px;
 	&:active {
 		background-color: lighten(@btn-bgc, 10%);
 	}
@@ -28,23 +28,6 @@ button,
 		line-height: 14px;
 	}
 }
-
-.btn-box {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	padding: @btn-box-padding-TB @btn-box-padding-LR;
-}
-.btn-box-w100 {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	.btn {
-		height: @btn-w100-height;
-		font-size: @34px;
-		line-height: @btn-w100-height;
-		border-radius: 0;
-	}
+.btn-warpper {
+	padding: @40px 0 @20px;
 }
