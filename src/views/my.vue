@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import TopNav from "../components/top-nav.vue";
+import TopNav from "../components/top-nav/top-nav.vue";
 import BottomNav from "../components/bottom-nav.vue";
 
 export default {

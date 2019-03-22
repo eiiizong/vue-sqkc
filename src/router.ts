@@ -7,6 +7,9 @@ import ForgetPassword from "./views/forget-password.vue";
 import Index from "./views/index.vue";
 import Task from "./views/task.vue";
 import My from "./views/my.vue";
+import AccountRecords from "./views/account-records.vue";
+import RecordsBuyCourse from "./views/records-buy-course.vue";
+import RecordsWithdraw from "./views/records-withdraw.vue";
 
 Vue.use(Router);
 
@@ -14,15 +17,34 @@ const routes = [
   {
     path: "/home",
     component: Index,
-    childrens: [],
+    children: [],
     meta: {
       title: "首页"
     }
   },
   {
+    path: "/accountRecords",
+    component: AccountRecords,
+    children: [
+      {
+        path: 'buyCourse',
+        name: 'RecordsBuyCourse',
+        component: RecordsBuyCourse
+      },
+      {
+        path: 'withdraw',
+        name: 'RecordsWithdraw',
+        component: RecordsWithdraw,
+      }
+    ],
+    meta: {
+      title: "账户记录"
+    }
+  },
+  {
     path: "/my",
     component: My,
-    childrens: [],
+    children: [],
     meta: {
       title: "个人中心"
     }

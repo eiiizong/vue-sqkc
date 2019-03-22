@@ -1,7 +1,6 @@
 <template>
-  <div class="task">
-    <TopNav title="社群任务"></TopNav>
-    <BottomNav :navIndex="1"></BottomNav>
+  <div class="records-withdraw">
+    records-withdraw
   </div>
 </template>
 
@@ -47,8 +46,6 @@ export default {
 <style lang="less">
 @import url(../assets/less/variable.less);
 
-.task {
-  background-color: #f8f8f8;
-  padding-bottom: @90px;
+.records-withdraw {
 }
 </style>

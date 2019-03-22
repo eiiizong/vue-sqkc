@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-    <TopNav title="首页"></TopNav>
+    <TopNav :topData="topData"></TopNav>
     <div class="content">
       <div class="top">
         <div class="img-warrper">
@@ -18,41 +18,11 @@
         </div>
       </div>
       <div class="center">
-        <ul class="nav clearfix">
-          <li>
-            <router-link to="/recommendedStudents">
-              <i class="icon icon-recommended-students"></i>
-              <span>推荐学员</span>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/buyCourse">
-              <i class="icon icon-buy-course"></i>
-              <span>课程购买</span>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/studentsGrades">
-              <i class="icon icon-students-grades"></i>
-              <span>学员等级</span>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/aboutUs">
-              <i class="icon icon-about-us"></i>
-              <span>关于我们</span>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/communityProducts">
-              <i class="icon icon-community-products"></i>
-              <span>社群产品</span>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/localCommunity">
-              <i class="icon icon-local-community"></i>
-              <span>各地社群</span>
+        <ul class="nav clearfix" v-if="navData">
+          <li v-for="(item, index) in navData" :key="index">
+            <router-link :to="item.path">
+              <i class="icon" :class="item.iconClassName"></i>
+              <span>{{ item.name }}</span>
             </router-link>
           </li>
         </ul>
@@ -88,15 +58,51 @@
 </template>
 
 <script>
-import TopNav from "../components/top-nav.vue";
+import TopNav from "../components/top-nav/top-nav.vue";
 import BottomNav from "../components/bottom-nav.vue";
 export default {
   name: "index",
   data() {
     return {
-      isPassword: true,
-      isSendCode: false,
-      timeNumber: 60
+      topData: {
+        title: '首页',
+        hasGoBack: false,
+        bgc: '',
+        color: ''
+      },
+      navData: [
+        {
+          path: '/recommendedStudents',
+          name: '推荐学员',
+          iconClassName: 'icon-recommended-students'
+        },
+        {
+          path: '/buyCourse',
+          name: '课程购买',
+          iconClassName: 'icon-buy-course'
+        },
+        {
+          path: '/studentsGrades',
+          name: '学员等级',
+          iconClassName: 'icon-students-grades'
+        },
+        {
+          path: '/aboutUs',
+          name: '关于我们',
+          iconClassName: 'icon-about-us'
+        },
+        {
+          path: '/communityProducts',
+          name: '社群产品',
+          iconClassName: 'icon-community-products'
+        },
+        {
+          path: '/localCommunity',
+          name: '各地社群',
+          iconClassName: 'icon-local-community'
+        }
+
+      ]
     };
   },
   created() {},
@@ -129,7 +135,6 @@ export default {
 @import url(../assets/less/variable.less);
 
 .index {
-  background-color: #f8f8f8;
   padding-bottom: @90px;
   .content {
     .top {
