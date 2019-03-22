@@ -1,37 +1,26 @@
 <template>
   <div class="my">
-    
+    my
   </div>
 </template>
 
 <script>
-import TopNav from "../components/top-nav/top-nav.vue";
-
+// import TopNav from "../components/top-nav/top-nav.vue";
 export default {
-  name: "my",
+  name: "My",
   data() {
     return {
-      isPassword: true,
-      isSendCode: false,
-      timeNumber: 60
+      
     };
   },
-  created() {},
-  methods: {
-    
-  },
-  components: {
-    TopNav
-  }
+  components: {}
 };
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 @import url(../assets/less/variable.less);
-
-.index {
-  background-color: #f8f8f8;
-  padding-bottom: @90px;
-
+.my {
+  
 }
+
 </style>

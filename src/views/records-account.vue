@@ -10,7 +10,7 @@
     </div>
     <RecordNav></RecordNav>
     <div class="content">
-      <router-view/>
+      <router-view />
     </div>
   </div>
 </template>
@@ -23,15 +23,14 @@ export default {
   data() {
     return {
       topData: {
-        title: '账户记录',
+        title: "账户记录",
         hasGoBack: true,
-        bgc: '#fff',
-        color: '#000'
+        bgc: "#fff",
+        color: "#000"
       }
     };
   },
-  methods: {
-  },
+  methods: {},
   components: {
     TopNav,
     RecordNav
@@ -50,8 +49,7 @@ export default {
     }
   }
   .content {
-    height: 600px;
-    background-color: #f0f;
+    background-color: #fcfcfc;
   }
 }
 </style>

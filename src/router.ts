@@ -3,17 +3,19 @@ import Router from "vue-router";
 // import Home from "./views/Home.vue";
 import Index from "./views/index.vue";
 import Home from "./views/home.vue";
-import Login from "./views/login-in.vue";
-import Sign from "./views/sign-in.vue";
-import RealTime from "./views/sign-in.vue";
-
-import ForgetPassword from "./views/forget-password.vue";
-
 import Task from "./views/task.vue";
 import My from "./views/my.vue";
-import AccountRecords from "./views/account-records.vue";
+import RealTime from "./views/real-time.vue";
+
+import Login from "./views/login-in.vue";
+import Sign from "./views/sign-in.vue";
+import ForgetPassword from "./views/forget-password.vue";
+
+import AccountRecords from "./views/records-account.vue";
 import RecordsBuyCourse from "./views/records-buy-course.vue";
 import RecordsWithdraw from "./views/records-withdraw.vue";
+import GetTask from "./views/records-get-task.vue";
+import RecordsFour from "./views/records-four.vue";
 
 Vue.use(Router);
 
@@ -60,21 +62,44 @@ const routes = [
   {
     path: "/accountRecords",
     component: AccountRecords,
+    meta: {
+      title: "账户记录"
+    },
     children: [
+      {
+        path: '',
+        name: 'GetTask',
+        component: GetTask,
+        meta: {
+          title: "账户记录"
+        }
+      },
       {
         path: 'buyCourse',
         name: 'RecordsBuyCourse',
-        component: RecordsBuyCourse
+        component: RecordsBuyCourse,
+        meta: {
+          title: "账户记录"
+        }
       },
       {
         path: 'withdraw',
         name: 'RecordsWithdraw',
         component: RecordsWithdraw,
+        meta: {
+          title: "账户记录"
+        }
+      },
+      {
+        path: 'four',
+        name: 'RecordsFour',
+        component: RecordsFour,
+        meta: {
+          title: "账户记录"
+        }
       }
     ],
-    meta: {
-      title: "账户记录"
-    }
+    
   },
   {
     path: "/login",

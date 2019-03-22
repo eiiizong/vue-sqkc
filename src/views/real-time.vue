@@ -1,13 +1,13 @@
 <template>
-  <div class="task">
-    task
+  <div class="real-time">
+    real-time
   </div>
 </template>
 
 <script>
 // import TopNav from "../components/top-nav/top-nav.vue";
 export default {
-  name: "Task",
+  name: "RealTime",
   data() {
     return {
       
@@ -19,7 +19,7 @@ export default {
 
 <style lang="less" scoped>
 @import url(../assets/less/variable.less);
-.task {
+.real-time {
   
 }
 
