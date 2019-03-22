@@ -6,7 +6,6 @@
 
 <script>
 import TopNav from "../components/top-nav/top-nav.vue";
-import BottomNav from "../components/bottom-nav.vue";
 
 export default {
   name: "task",
@@ -37,15 +36,14 @@ export default {
     }
   },
   components: {
-    TopNav,
-    BottomNav
+    TopNav
   }
 };
 </script>
 
 <style lang="less">
 @import url(../assets/less/variable.less);
-
 .records-buy-course {
+  
 }
 </style>

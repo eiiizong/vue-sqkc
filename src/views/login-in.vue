@@ -45,7 +45,7 @@ export default {
     },
     // 登录按钮
     login() {
-      this.$router.push({path: '/home'});
+      this.$router.push({path: '/'});
     }
   }
 };

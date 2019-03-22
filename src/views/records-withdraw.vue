@@ -6,7 +6,6 @@
 
 <script>
 import TopNav from "../components/top-nav/top-nav.vue";
-import BottomNav from "../components/bottom-nav.vue";
 
 export default {
   name: "task",
@@ -35,10 +34,6 @@ export default {
         }
       }, 1000);
     }
-  },
-  components: {
-    TopNav,
-    BottomNav
   }
 };
 </script>

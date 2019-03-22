@@ -32,17 +32,15 @@ export default {
 <style scoped lang="less">
 @import url(../../assets/less/variable.less);
 @import url(./icon.css);
-@height: @116px;
 @fs: @34px;
 @bgc: #356aff;
 @color: #fff;
 .top-nav {
-  height: @height;
   background-color: transparent;
   .content {
     display: block;
     width: 100%;
-    height: @height;
+    height: @top-nav-height;
     font-weight: bold;
     font-size: @fs;
     line-height: 1;

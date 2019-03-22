@@ -1,13 +1,11 @@
 <template>
   <div class="task">
-    <TopNav title="社群任务"></TopNav>
-    <BottomNav :navIndex="1"></BottomNav>
+    
   </div>
 </template>
 
 <script>
 import TopNav from "../components/top-nav/top-nav.vue";
-import BottomNav from "../components/bottom-nav.vue";
 
 export default {
   name: "task",
@@ -38,8 +36,7 @@ export default {
     }
   },
   components: {
-    TopNav,
-    BottomNav
+    TopNav
   }
 };
 </script>
