@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-    <TopNav :topData="topData"></TopNav>
+    <TopNav :props="topData"></TopNav>
     <div class="content">
       <router-view/>
     </div>

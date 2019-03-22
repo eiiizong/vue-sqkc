@@ -17,6 +17,11 @@ import RecordsWithdraw from "./views/records-withdraw.vue";
 import GetTask from "./views/records-get-task.vue";
 import RecordsFour from "./views/records-four.vue";
 
+
+import ImmediatelyBuy from "./views/immediately-buy.vue";
+
+
+
 Vue.use(Router);
 
 const routes = [
@@ -123,6 +128,14 @@ const routes = [
     component: ForgetPassword,
     meta: {
       title: "重置密码"
+    }
+  },
+  {
+    path: "/immediatelyBuy",
+    name: "ImmediatelyBuy",
+    component: ImmediatelyBuy,
+    meta: {
+      title: "立即买入"
     }
   }
 ];
