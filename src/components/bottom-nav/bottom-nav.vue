@@ -67,7 +67,7 @@ export default {
     font-weight: bold;
     font-size: @20px;
     text-align: center;
-    background-color: #fff;
+    background-color: #fcfcfc;
     position: fixed;
     bottom: 0;
     left: 0;

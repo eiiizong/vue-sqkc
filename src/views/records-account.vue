@@ -1,14 +1,16 @@
 <template>
   <div class="account-records">
-    <TopNav :topData="topData"></TopNav>
-    <div class="banner">
-      <ul class="item">
-        <li class="img-warrper">
-          <img src="../assets/img/record-banner-01.jpg" alt="">
-        </li>
-      </ul>
+    <div class="top">
+      <TopNav :props="topData"></TopNav>
+      <div class="banner">
+        <ul class="item">
+          <li class="img-warrper">
+            <img src="../assets/img/record-banner-01.jpg" alt="">
+          </li>
+        </ul>
+      </div>
+      <RecordNav></RecordNav>
     </div>
-    <RecordNav></RecordNav>
     <div class="content">
       <router-view />
     </div>
@@ -41,15 +43,29 @@ export default {
 <style lang="less" scoped>
 @import url(../assets/less/variable.less);
 .account-records {
-  display: block;
-  background-color: #fcfcfc;
-  .banner {
-    img {
-      width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: auto;
+  overflow: hidden;
+  .top {
+    padding-top: @top-nav-height;
+    .banner {
+      img {
+        width: 100%;
+      }
     }
   }
   .content {
+    width: 100%;
+    flex: 1;
     background-color: #fcfcfc;
+    overflow: hidden;
+    > div {
+      overflow: auto;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 </style>

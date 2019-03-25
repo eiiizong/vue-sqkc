@@ -44,6 +44,56 @@
         </li>
       </ul>
     </nav>
+    <div class="group">
+      <h1>我的组员(3)</h1>
+      <div class="card-warrper">
+        <div class="card-group clearfix">
+          <div class="left">
+            <img src="../assets/img/user-img.png" alt="">
+          </div>
+          <div class="left">
+            <p class="user-name">
+              <span>sdahsdak</span>
+              <Level props="学员一级" className="one"></Level>
+            </p>
+            <p>ta有2个组员</p>
+          </div>
+          <div class="right">
+            <router-link to="">ta的组员</router-link>
+          </div>
+        </div>
+        <div class="card-group clearfix">
+          <div class="left">
+            <img src="../assets/img/user-img.png" alt="">
+          </div>
+          <div class="left">
+            <p class="user-name">
+              <span>sdahsdak</span>
+              <Level props="学员一级" className="one"></Level>
+            </p>
+            <p>ta有2个组员</p>
+          </div>
+          <div class="right">
+            <router-link to="">ta的组员</router-link>
+          </div>
+        </div>
+        <div class="card-group clearfix">
+          <div class="left">
+            <img src="../assets/img/user-img.png" alt="">
+          </div>
+          <div class="left">
+            <p class="user-name">
+              <span>sdahsdak</span>
+              <Level props="学员一级" className="one"></Level>
+            </p>
+            <p>ta有2个组员</p>
+          </div>
+          <div class="right">
+            <router-link to="">ta的组员</router-link>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -134,18 +184,85 @@ export default {
   }
   nav {
     padding-top: @80px;
+    padding-bottom: @56px;
     li {
       text-align: center;
       width: 50%;
       float: left;
+      a {
+        display: block;
+        font-size: 0;
+      }
       span {
-        display: inline-block;
+        display: block;
         font-size: @26px;
         line-height: 1;
         color: #2a2a2a;
         margin-top: @8px;
       }
+
+      .icon {
+        width: @40px;
+        height: @40px;
+        .image("withdraw");
+        display: inline-block;
+      }
+      .icon-account-records {
+        .image("income-record");
+      }
     }
+  }
+  .group {
+    padding: 0 @30px;
+    h1 {
+      font-size: @34px;
+      font-weight: 700;
+      color: #000;
+      line-height: 1;
+      margin-bottom: @30px;
+    }
+  }
+}
+
+.card-group {
+  width: 100%;
+  padding: @34px 0;
+  border-bottom: 1px solid #ededed;
+  position: relative;
+  img {
+    width: @100px;
+    height: @100px;
+    border-radius: 50%;
+    margin-right: @40px;
+  }
+  a {
+    display: inline-block;
+    font-size: @28px;
+    color: #356aff;
+    border: 1px solid#356aff;
+    line-height: 1;
+    padding: @12px @26px;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+  .user-name {
+    font-size: @30px;
+    font-weight: 700;
+    color: #282828;
+    line-height: 1;
+    padding-top: @16px;
+    margin-bottom: @18px;
+    span {
+      margin-right: @10px;
+    }
+  }
+  p {
+    font-size: @24px;
+    line-height: 1;
+    color: #282828;
   }
 }
 </style>
