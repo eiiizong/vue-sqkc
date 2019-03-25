@@ -57,7 +57,7 @@ export default {
     return {
       navData: [
         {
-          path: "/recommendedStudents",
+          path: "/promoteQRCode",
           name: "推荐学员",
           iconClassName: "icon-recommended-students"
         },

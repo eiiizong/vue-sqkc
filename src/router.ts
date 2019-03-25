@@ -24,6 +24,15 @@ import RecordsFour from "./views/records-four.vue";
 
 import ImmediatelyBuy from "./views/immediately-buy.vue";
 import HisTeamMembers from "./views/his-team-members.vue";
+import PromoteQRCode from "./views/promote-QR-code.vue";
+import BuyCourse from "./views/course-buy.vue";
+import CourseDetail from "./views/course-detail.vue";
+import PayWay from "./views/pay-way.vue";
+import Pay from "./views/pay.vue";
+import PayResult from "./views/pay-result.vue";
+import GetCash from "./views/get-cash.vue";
+import Review from "./views/review.vue";
+import TaskDetail from "./views/task-detail.vue";
 
 Vue.use(Router);
 
@@ -174,6 +183,78 @@ const routes = [
     component: HisTeamMembers,
     meta: {
       title: "他的组员"
+    }
+  },
+  {
+    path: "/promoteQRCode",
+    name: "promoteQRCode",
+    component: PromoteQRCode,
+    meta: {
+      title: "推广二维码"
+    }
+  },
+  {
+    path: "/buyCourse",
+    name: "buyCourse",
+    component: BuyCourse,
+    meta: {
+      title: "购买课程"
+    }
+  },
+  {
+    path: "/courseDetail",
+    name: "courseDetail",
+    component: CourseDetail,
+    meta: {
+      title: "购买课程"
+    }
+  },
+  {
+    path: "/pay",
+    name: "pay",
+    component: Pay,
+    meta: {
+      title: "确认支付"
+    }
+  },
+  {
+    path: "/payWay",
+    name: "payWay",
+    component: PayWay,
+    meta: {
+      title: "确认支付"
+    }
+  },
+  {
+    path: "/payResult",
+    name: "payResult",
+    component: PayResult,
+    meta: {
+      title: "支付结果"
+    }
+  },
+  {
+    path: "/getCash",
+    name: "getCash",
+    component: GetCash,
+    meta: {
+      title: "提现"
+    }
+  },
+  {
+    path: "/review",
+    name: "review",
+    component: Review,
+    meta: {
+      title: "提交审核"
+    }
+  },
+  {
+    path: "/taskDetail",
+    name: "taskDetail",
+    component: TaskDetail,
+    meta: {
+      title: "任务详情"
     }
   }
 ];
