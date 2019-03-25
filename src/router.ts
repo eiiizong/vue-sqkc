@@ -7,6 +7,12 @@ import Task from "./views/task.vue";
 import My from "./views/my.vue";
 import RealTime from "./views/real-time.vue";
 
+import TaskToReceive from "./views/task-to-receive.vue";
+import TaskInReview from "./views/task-in-review.vue";
+import TaskRule from "./views/task-rule.vue";
+import TaskRunning from "./views/task-running.vue";
+
+
 import Login from "./views/login-in.vue";
 import Sign from "./views/sign-in.vue";
 import ForgetPassword from "./views/forget-password.vue";
@@ -60,7 +66,41 @@ const routes = [
         component: Task,
         meta: {
           title: "社群任务"
-        }
+        },
+        children: [
+          {
+            path: '',
+            component: TaskToReceive,
+            name: 'taskToReceive',
+            meta: {
+              title: "社群任务"
+            },
+          },
+          {
+            path: 'inReview',
+            component: TaskInReview,
+            name: 'taskInReview',
+            meta: {
+              title: "社群任务"
+            },
+          },
+          {
+            path: 'rule',
+            component: TaskRule,
+            name: 'taskRule',
+            meta: {
+              title: "社群任务"
+            },
+          },
+          {
+            path: 'running',
+            component: TaskRunning,
+            name: 'taskRunning',
+            meta: {
+              title: "社群任务"
+            },
+          }
+        ]
       },
     ],
   },
