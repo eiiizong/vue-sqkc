@@ -1,5 +1,5 @@
 <template>
-  <div class="top-nav">
+  <div class="top-nav" v-if="props">
     <div
       class="content"
       :style="{ backgroundColor: props.bgc, color: props.color }"

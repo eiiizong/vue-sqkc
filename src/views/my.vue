@@ -30,7 +30,7 @@
     <nav>
       <ul class="clearfix">
         <li>
-          <router-link to="/withdraw">
+          <router-link to="/getCash">
             <i class="icon icon-withraw"></i>
             <span>学币提现</span>
           </router-link>
