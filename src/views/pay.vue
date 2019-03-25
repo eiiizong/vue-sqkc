@@ -1,17 +1,20 @@
 <template>
   <div class="pay">
-    <h3>pay.vue</h3>
+    <NavCommon></NavCommon>
   </div>
 </template>
 
 <script>
 // import TopNav from "../components/top-nav/top-nav.vue";
+import NavCommon from "../components/nav-common/nav-common.vue";
 export default {
   name: "pay",
   data() {
     return {};
   },
-  components: {}
+  components: {
+    NavCommon
+  }
 };
 </script>
 
