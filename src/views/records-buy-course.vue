@@ -22,5 +22,6 @@ export default {
 <style lang="less">
 @import url(../assets/less/variable.less);
 .records-buy-course {
+  width: 100%;
 }
 </style>

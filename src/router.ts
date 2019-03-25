@@ -23,6 +23,7 @@ import GetTask from "./views/records-get-task.vue";
 import RecordsFour from "./views/records-four.vue";
 
 import ImmediatelyBuy from "./views/immediately-buy.vue";
+import HisTeamMembers from "./views/his-team-members.vue";
 
 Vue.use(Router);
 
@@ -165,6 +166,14 @@ const routes = [
     component: ImmediatelyBuy,
     meta: {
       title: "立即买入"
+    }
+  },
+  {
+    path: "/hisTeamMembers",
+    name: "hisTeamMembers",
+    component: HisTeamMembers,
+    meta: {
+      title: "他的组员"
     }
   }
 ];

@@ -1,6 +1,6 @@
 <template>
   <div class="real-time">
-    real-time
+    <h3>开发中</h3>
   </div>
 </template>
 
@@ -18,5 +18,6 @@ export default {
 <style lang="less" scoped>
 @import url(../assets/less/variable.less);
 .real-time {
+  width: 100%;
 }
 </style>

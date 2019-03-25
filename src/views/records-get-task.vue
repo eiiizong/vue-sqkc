@@ -41,5 +41,6 @@ export default {
 <style lang="less">
 @import url(../assets/less/variable.less);
 .records-get-task {
+  width: 100%;
 }
 </style>

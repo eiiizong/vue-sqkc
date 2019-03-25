@@ -58,7 +58,7 @@
             <p>ta有2个组员</p>
           </div>
           <div class="right">
-            <router-link to="">ta的组员</router-link>
+            <router-link to="/hisTeamMembers">ta的组员</router-link>
           </div>
         </div>
         <div class="card-group clearfix">
@@ -73,7 +73,7 @@
             <p>ta有2个组员</p>
           </div>
           <div class="right">
-            <router-link to="">ta的组员</router-link>
+            <router-link to="/hisTeamMembers">ta的组员</router-link>
           </div>
         </div>
         <div class="card-group clearfix">
@@ -88,7 +88,7 @@
             <p>ta有2个组员</p>
           </div>
           <div class="right">
-            <router-link to="">ta的组员</router-link>
+            <router-link to="/hisTeamMembers">ta的组员</router-link>
           </div>
         </div>
       </div>
