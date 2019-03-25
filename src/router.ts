@@ -12,7 +12,6 @@ import TaskInReview from "./views/task-in-review.vue";
 import TaskRule from "./views/task-rule.vue";
 import TaskRunning from "./views/task-running.vue";
 
-
 import Login from "./views/login-in.vue";
 import Sign from "./views/sign-in.vue";
 import ForgetPassword from "./views/forget-password.vue";
@@ -23,30 +22,27 @@ import RecordsWithdraw from "./views/records-withdraw.vue";
 import GetTask from "./views/records-get-task.vue";
 import RecordsFour from "./views/records-four.vue";
 
-
 import ImmediatelyBuy from "./views/immediately-buy.vue";
-
-
 
 Vue.use(Router);
 
 const routes = [
   {
     path: "/",
-    name: 'Index',
+    name: "index",
     component: Index,
     children: [
       {
         path: "",
-        name: 'Home',
+        name: "home",
         component: Home,
         meta: {
           title: "首页"
-        },
+        }
       },
       {
         path: "my",
-        name: 'My',
+        name: "my",
         component: My,
         meta: {
           title: "个人中心"
@@ -54,7 +50,7 @@ const routes = [
       },
       {
         path: "realTime",
-        name: 'RealTime',
+        name: "realTime",
         component: RealTime,
         meta: {
           title: "实时播报"
@@ -64,91 +60,84 @@ const routes = [
         path: "task",
         name: "task",
         component: Task,
-        meta: {
-          title: "社群任务"
-        },
         children: [
           {
-            path: '',
+            path: "",
             component: TaskToReceive,
-            name: 'taskToReceive',
+            name: "taskToReceive",
             meta: {
               title: "社群任务"
-            },
+            }
           },
           {
-            path: 'inReview',
+            path: "inReview",
             component: TaskInReview,
-            name: 'taskInReview',
+            name: "taskInReview",
             meta: {
               title: "社群任务"
-            },
+            }
           },
           {
-            path: 'rule',
+            path: "rule",
             component: TaskRule,
-            name: 'taskRule',
+            name: "taskRule",
             meta: {
               title: "社群任务"
-            },
+            }
           },
           {
-            path: 'running',
+            path: "running",
             component: TaskRunning,
-            name: 'taskRunning',
+            name: "taskRunning",
             meta: {
               title: "社群任务"
-            },
+            }
           }
         ]
-      },
-    ],
+      }
+    ]
   },
   {
     path: "/accountRecords",
     component: AccountRecords,
-    meta: {
-      title: "账户记录"
-    },
     children: [
       {
-        path: '',
-        name: 'GetTask',
+        path: "",
+        name: "getTask",
         component: GetTask,
         meta: {
           title: "账户记录"
         }
       },
       {
-        path: 'buyCourse',
-        name: 'RecordsBuyCourse',
+        path: "buyCourse",
+        name: "recordsBuyCourse",
         component: RecordsBuyCourse,
         meta: {
           title: "账户记录"
         }
       },
       {
-        path: 'withdraw',
-        name: 'RecordsWithdraw',
+        path: "withdraw",
+        name: "recordsWithdraw",
         component: RecordsWithdraw,
         meta: {
           title: "账户记录"
         }
       },
       {
-        path: 'four',
-        name: 'RecordsFour',
+        path: "four",
+        name: "recordsFour",
         component: RecordsFour,
         meta: {
           title: "账户记录"
         }
       }
-    ],
-    
+    ]
   },
   {
     path: "/login",
-    name: "Login",
+    name: "login",
     component: Login,
     meta: {
       title: "登录"
@@ -156,7 +145,7 @@ const routes = [
   },
   {
     path: "/sign",
-    name: "Sign",
+    name: "sign",
     component: Sign,
     meta: {
       title: "注册"
@@ -164,7 +153,7 @@ const routes = [
   },
   {
     path: "/forgetPassword",
-    name: "ForgetPassword",
+    name: "forgetPassword",
     component: ForgetPassword,
     meta: {
       title: "重置密码"
@@ -172,7 +161,7 @@ const routes = [
   },
   {
     path: "/immediatelyBuy",
-    name: "ImmediatelyBuy",
+    name: "immediatelyBuy",
     component: ImmediatelyBuy,
     meta: {
       title: "立即买入"

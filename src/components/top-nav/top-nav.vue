@@ -1,10 +1,15 @@
 <template>
   <div class="top-nav">
-    <div class="content" :style="{backgroundColor: props.bgc, color: props.color}">
+    <div
+      class="content"
+      :style="{ backgroundColor: props.bgc, color: props.color }"
+    >
       <div class="btn-goback" v-if="props.hasGoBack" @click="goBack">
-        <i class="icon-go-back" :style="{color: props.color}"></i>
+        <i class="icon-go-back" :style="{ color: props.color }"></i>
       </div>
-      <div class="text-warrper"><span>{{ props.title }}</span></div>
+      <div class="text-warrper">
+        <span>{{ props.title }}</span>
+      </div>
       <div class="right"></div>
     </div>
   </div>
@@ -14,8 +19,7 @@
 export default {
   name: "topNav",
   props: {
-    props: Object,
-    required: true
+    props: Object
   },
   data() {
     return {};

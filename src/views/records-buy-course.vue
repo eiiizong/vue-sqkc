@@ -9,14 +9,10 @@ import Card from "../components/card/card.vue";
 export default {
   name: "RecordsBuyCourse",
   data() {
-    return {
-      
-    };
+    return {};
   },
   created() {},
-  methods: {
-    
-  },
+  methods: {},
   components: {
     Card
   }
@@ -26,6 +22,5 @@ export default {
 <style lang="less">
 @import url(../assets/less/variable.less);
 .records-buy-course {
-  
 }
 </style>

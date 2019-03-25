@@ -2,7 +2,7 @@
   <div class="index">
     <TopNav :props="topData"></TopNav>
     <div class="content">
-      <router-view/>
+      <router-view />
     </div>
     <BottomNav></BottomNav>
   </div>
@@ -16,10 +16,10 @@ export default {
   data() {
     return {
       topData: {
-        title: '首页',
+        title: "首页",
         hasGoBack: false,
-        bgc: '',
-        color: ''
+        bgc: "",
+        color: ""
       }
     };
   },
@@ -31,7 +31,7 @@ export default {
     BottomNav
   },
   watch: {
-    $route: function (to, form) {
+    $route: function(to, form) {
       this.topData.title = to.meta.title;
     }
   }

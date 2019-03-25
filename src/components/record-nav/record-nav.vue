@@ -2,7 +2,9 @@
   <nav class="record-nav" v-if="routes">
     <ul class="clearfix">
       <li v-for="(item, index) in routes" :key="index">
-        <router-link :to="item.path"><span> {{ item.name }} </span></router-link>
+        <router-link :to="item.path">
+          <span> {{ item.name }} </span>
+        </router-link>
       </li>
     </ul>
   </nav>

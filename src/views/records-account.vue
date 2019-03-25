@@ -5,7 +5,7 @@
       <div class="banner">
         <ul class="item">
           <li class="img-warrper">
-            <img src="../assets/img/record-banner-01.jpg" alt="">
+            <img src="../assets/img/record-banner-01.jpg" alt="" />
           </li>
         </ul>
       </div>
@@ -69,4 +69,3 @@ export default {
   }
 }
 </style>
-

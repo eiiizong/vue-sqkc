@@ -6,14 +6,28 @@
         <label for="tel">
           <i class="icon icon-tel"></i>
         </label>
-        <input class="input" type="number" id="tel" placeholder="请输入手机号" />
+        <input
+          class="input"
+          type="number"
+          id="tel"
+          placeholder="请输入手机号"
+        />
       </div>
       <div class="input-warpper">
         <label for="password">
           <i class="icon icon-password"></i>
         </label>
-        <input class="input" id="password" :type="isPassword ? 'password' : 'text'" placeholder="请输入登录密码" />
-        <i class="icon icon-see-password" :class="isPassword ? '' : 'active'" @click="seePassword"></i>
+        <input
+          class="input"
+          id="password"
+          :type="isPassword ? 'password' : 'text'"
+          placeholder="请输入登录密码"
+        />
+        <i
+          class="icon icon-see-password"
+          :class="isPassword ? '' : 'active'"
+          @click="seePassword"
+        ></i>
       </div>
       <div class="btn-warpper">
         <button type="button" class="btn" @click="login">登录</button>
@@ -45,7 +59,7 @@ export default {
     },
     // 登录按钮
     login() {
-      this.$router.push({path: '/'});
+      this.$router.push({ path: "/" });
     }
   }
 };

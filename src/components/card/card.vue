@@ -5,11 +5,16 @@
         <div class="title clearfix">
           <span class="left text-one-ellipsis">下载某某APP</span>
         </div>
-        <p class="text-one-ellipsis">下载某某APP获得相对佣金，可邀请组员一起下载某某APP获得相对佣金，可邀请组员一起...</p>
+        <p class="text-one-ellipsis">
+          下载某某APP获得相对佣金，可邀请组员一起下载某某APP获得相对佣金，可邀请组员一起...
+        </p>
         <div class="clearfix link">
           <div class="left">今天 12:34</div>
           <div class="right">
-            <router-link to="/"><span>查看详情</span><i class="icon icon-db-link"></i></router-link>
+            <router-link to="/">
+              <span>查看详情</span>
+              <i class="icon icon-db-link"></i>
+            </router-link>
           </div>
         </div>
         <!-- <router-link :to="item.path"><span> {{ item.name }} </span></router-link> -->

@@ -9,9 +9,7 @@
 export default {
   name: "RealTime",
   data() {
-    return {
-      
-    };
+    return {};
   },
   components: {}
 };
@@ -20,7 +18,5 @@ export default {
 <style lang="less" scoped>
 @import url(../assets/less/variable.less);
 .real-time {
-  
 }
-
 </style>

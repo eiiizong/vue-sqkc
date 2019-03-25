@@ -2,7 +2,7 @@
   <div class="my">
     <div class="banner">
       <div class="img-warrper">
-        <img src="../assets/img/home-bg-01.jpg" alt="">
+        <img src="../assets/img/home-bg-01.jpg" alt="" />
       </div>
       <div class="card-warpper">
         <div class="card">
@@ -19,14 +19,13 @@
           </div>
           <div class="user-info">
             <div class="img-warpper">
-              <img src="../assets/img/user-img.png" alt="">
+              <img src="../assets/img/user-img.png" alt="" />
             </div>
             <div class="user-name text-one-ellipsis">Eiiizong</div>
             <Level props="学员一级" className="one"></Level>
           </div>
         </div>
       </div>
-
     </div>
     <nav>
       <ul class="clearfix">
@@ -49,7 +48,7 @@
       <div class="card-warrper">
         <div class="card-group clearfix">
           <div class="left">
-            <img src="../assets/img/user-img.png" alt="">
+            <img src="../assets/img/user-img.png" alt="" />
           </div>
           <div class="left">
             <p class="user-name">
@@ -64,7 +63,7 @@
         </div>
         <div class="card-group clearfix">
           <div class="left">
-            <img src="../assets/img/user-img.png" alt="">
+            <img src="../assets/img/user-img.png" alt="" />
           </div>
           <div class="left">
             <p class="user-name">
@@ -79,7 +78,7 @@
         </div>
         <div class="card-group clearfix">
           <div class="left">
-            <img src="../assets/img/user-img.png" alt="">
+            <img src="../assets/img/user-img.png" alt="" />
           </div>
           <div class="left">
             <p class="user-name">

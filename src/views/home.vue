@@ -2,7 +2,7 @@
   <div class="home">
     <div class="banner">
       <div class="img-warrper">
-        <img src="../assets/img/home-bg-01.jpg" alt="">
+        <img src="../assets/img/home-bg-01.jpg" alt="" />
       </div>
       <div class="ad">
         <div class="bg">
@@ -34,7 +34,9 @@
       <ul>
         <li>
           <h4 class="text-one-ellipsis">成都某工地发现UFO</h4>
-          <p class="text-two-ellipsis">这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容...</p>
+          <p class="text-two-ellipsis">
+            这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容这是新闻内容...
+          </p>
           <div class="time clearfix">
             <span class="left">发布于2018.09.01</span>
             <div class="right">

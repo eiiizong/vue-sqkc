@@ -18,7 +18,12 @@
           <label for="buyPrice"><span>买入价</span></label>
         </div>
         <div class="right">
-          <input type="number" class="input" id="buyPrice" placeholder="请输入买入价">
+          <input
+            type="number"
+            class="input"
+            id="buyPrice"
+            placeholder="请输入买入价"
+          />
         </div>
       </div>
       <div class="cell-warrper">
@@ -34,7 +39,12 @@
           <label for="buyNum"><span>买入股数</span></label>
         </div>
         <div class="right">
-          <input type="number" class="input" id="buyNum" placeholder="请输入买入股数">
+          <input
+            type="number"
+            class="input"
+            id="buyNum"
+            placeholder="请输入买入股数"
+          />
         </div>
       </div>
       <div class="cell-warrper">
@@ -46,7 +56,6 @@
         </div>
       </div>
     </form>
-
     <div class="btn-warrper">
       <button type="button" class="btn">立即买入</button>
     </div>
@@ -140,5 +149,3 @@ export default {
   }
 }
 </style>
-
-
