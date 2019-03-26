@@ -10,20 +10,22 @@
         <span class="new-price">{{ props.newPrice }}</span>
         <span class="old-price">{{ props.oldPrice }}</span>
       </div>
-      <div class="btn-warpper">
-        <router-link :to="props.path" class="btn">购买</router-link>
-      </div>
+      <Btn :to="props.path" value="购买" className="h54"></Btn>
     </div>
   </div>
 </template>
 
 <script>
+import Btn from "../btn/btn.vue";
 export default {
   name: "cardBuyCourse",
   props: {
     props: Object
   },
-  methods: {}
+  methods: {},
+  components: {
+    Btn
+  }
 };
 </script>
 
@@ -98,13 +100,11 @@ export default {
   }
   .btn-warpper {
     position: absolute;
-    padding: 0;
     right: @32px;
     bottom: @20px;
+    width: @140px;
     .btn {
-      width: @140px;
       height: @54px;
-      line-height: @54px;
     }
   }
 }

@@ -54,8 +54,7 @@ export default {
           getMoney: "8.00",
           newPrice: "389",
           oldPrice: "589"
-        }
-        ,
+        },
         {
           imgURL: "",
           id: 0,
@@ -64,8 +63,7 @@ export default {
           getMoney: "8.00",
           newPrice: "389",
           oldPrice: "589"
-        }
-        ,
+        },
         {
           imgURL: "",
           id: 0,
@@ -76,7 +74,6 @@ export default {
           oldPrice: "589"
         }
       ]
-      
     };
   },
   components: {
