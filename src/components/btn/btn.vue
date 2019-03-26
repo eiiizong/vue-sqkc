@@ -1,21 +1,14 @@
 <template>
-  <div class="btn-warpper">
-    <button class="btn" :class="className" v-if="!to">
-      <i class="icon" v-if="iconClassName" :class="iconClassName"></i>
-      <span> {{ value }} </span>
-    </button>
-    <router-link :to="to" class="btn" :class="className" v-else>
-      <i class="icon" v-if="iconClassName" :class="iconClassName"></i>
-      <span> {{ value }} </span>
-    </router-link>
-  </div>
+  <button class="btn" :class="className">
+    <i class="icon" v-if="iconClassName" :class="iconClassName"></i>
+    <span> {{ value }} </span>
+  </button>
 </template>
 
 <script>
 export default {
   name: "btn",
   props: {
-    to: String,
     value: {
       type: String,
       default: "按钮"
@@ -83,6 +76,16 @@ export default {
   }
   &.br0 {
     border-radius: 0;
+  }
+  &.no {
+    font-size: @28px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1;
+    color: #356aff;
+    background-color: transparent;
+    width: auto;
+    height: auto;
   }
 }
 </style>
